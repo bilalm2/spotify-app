@@ -1,15 +1,24 @@
-import { getArtists } from "./Artists/FetchArtists.js";
-import { getAccessToken } from "./AuthController/GetAccessToken.js";
-import { redirectToAuthFlow } from "./AuthController/RedirectToAuthFlow.js";
+import { redirectToAuthCodeFlow } from './AuthController/RedirectToAuthFlow.js';
+import { getAccessToken } from './AuthController/GetAccessToken.js';
 
 
 const clientId = "f8435734ad604359be9029b20de31971";
-const code = undefined;
-
-if(!code){
-    redirectToAuthFlow(clientId);
+if(typeof window !== undefined) {
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
 }
 else {
-    const accessToken = await getAccessToken(clientId, code);
-    const artists = await getArtists(accessToken);
+    console.log("error")
 }
+
+if (!code) {
+    redirectToAuthCodeFlow(clientId);
+} else {
+    const accessToken = await getAccessToken(clientId, code);
+    console.log(accessToken);
+}
+
+
+
+
+

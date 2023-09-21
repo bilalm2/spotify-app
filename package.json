@@ -1,5 +1,5 @@
 {
-  "type": "Commonjs",
+  "type": "module",
   "name": "spotify-app",
   "version": "1.0.0",
   "dependencies": {
