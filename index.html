@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>My Spotify Profile</title>
+    <meta charset="UTF-8">
+    <title> Linktree Clone </title>
     <script src="src/app.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<h1>Display your Spotify profile data</h1>
 
-<section id="profile">
-    <h2>Logged in as <span id="displayName"></span></h2>
-    <span id="avatar"></span>
-    <ul>
-        <li>User ID: <span id="id"></span></li>
-        <li>Email: <span id="email"></span></li>
-        <li>Spotify URI: <a id="uri" href="#"></a></li>
-        <li>Link: <a id="url" href="#"></a></li>
-        <li>Profile Image: <span id="imgUrl"></span></li>
-    </ul>
-</section>
+<body>
+
+    <header>
+        <div class="share-button"> </div>
+    </header>
+        <div class="container">
+            <div class="image-container">
+                       <span id="avatar"></span>
+        </div>
+        <h1>@<span id="displayName"></span></h1>
+            <a class="tile" href="profileData.html">
+                <p>Profile Data</p>
+            </a>
+            <a class="tile" href="https://www.twitter.com/ania_kubow">
+                <p>Most Listened to Artists</p>
+            </a>
+            <a class="tile" href="https://bytes.dev/?r=ania">
+                <p>Most Listened to Albums</p>
+            </a>
+            <a class="tile" href="http://localhost:5173/">
+                <p>Recommendations</p>
+            </a>
+    </div>
 </body>
 </html>
-
