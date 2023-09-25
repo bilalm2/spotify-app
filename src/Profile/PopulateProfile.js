@@ -1,4 +1,4 @@
-export function populateUI(profile) {
+export function populateProfile(profile) {
     document.getElementById("displayName").innerText = profile.display_name;
     if (profile.images[0]) {
         const profileImage = new Image(200, 200);
