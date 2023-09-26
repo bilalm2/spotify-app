@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My Spotify Profile</title>
+  <meta charset="UTF-8">
+  <title> Spotify Stats </title>
   <script src="src/app.js" type="module"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<h1>Spotify Profile Data</h1>
 
-<section id="profile">
-  <h2>Logged in as <span id="displayName"></span></h2>
-  <span id="avatar"></span>
-  <ul>
-    <li>Artist: <span id="firstArtist"></span></li>
-    <li>Email: <span id="email"></span></li>
-  </ul>
-</section>
+<body>
+
+  <h1>Top 5 most listened to artists for <span id="displayName"></span></h1>
+<a class="artist-tiles" href="#" id="firstUrl">
+  <div class="icon">
+    <span id="firstArtistImage"> </span>
+  </div>
+  <p><span id="firstArtist"></span></p>
+  <div class="tile-share-button">
+    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+  </div>
+</a>
+<a class="artist-tiles" href="https://www.twitter.com/ania_kubow">
+  <div class="icon">
+    <span id="secondArtistImage"> </span>
+  </div>
+  <p><span id="secondArtist"></span></p>
+  <div class="tile-share-button" link="https://www.twitter.com/ania_kubow">
+    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+  </div>
+</a>
+<a class="artist-tiles" href="https://bytes.dev/?r=ania">
+  <div class="icon">
+    <span id="thirdArtistImage"> </span>
+  </div>
+  <p><span id="thirdArtist"></span></p>
+  <div class="tile-share-button" link="https://bytes.dev/?r=ania">
+    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+  </div>
+</a>
+<a class="artist-tiles" href="https://bytes.dev/?r=ania">
+  <div class="icon">
+    <span id="fourthArtistImage"> </span>
+  </div>
+  <p><span id="fourthArtist"></span></p>
+  <div class="tile-share-button" link="https://bytes.dev/?r=ania">
+    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+  </div>
+</a>
+<a class="artist-tiles" href="https://bytes.dev/?r=ania">
+  <div class="icon">
+    <span id="fifthArtistImage"> </span>
+  </div>
+  <p><span id="fifthArtist"></span></p>
+  <div class="tile-share-button" link="https://bytes.dev/?r=ania">
+    <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+  </div>
+</a>
 </body>
 </html>
