@@ -2,8 +2,10 @@ import {redirectToAuthCodeFlow} from './AuthController/RedirectToAuthFlow.js';
 import {fetchAccessToken} from './AuthController/FetchAccessToken.js';
 import {fetchProfile} from './Profile/FetchProfile.js'
 import {fetchTopArtists} from './Artists/FetchArtists.js'
+import {fetchTopTracks} from "./Tracks/FetchTracks.js";
 import {populateProfile} from './Profile/PopulateProfile.js'
 import {populateArtists} from "./Artists/PopulateArtists.js";
+import {populateTracks} from "./Tracks/PopulateTracks.js";
 
 
 const clientId = "f8435734ad604359be9029b20de31971";
@@ -22,8 +24,10 @@ if (!accessToken) {
 
 const profile = await fetchProfile(sessionStorage.getItem("access_token"));
 const artistData = await fetchTopArtists(sessionStorage.getItem("access_token"));
+const trackData = await fetchTopTracks(sessionStorage.getItem("access_token"));
 populateProfile(profile);
 populateArtists(artistData);
+populateTracks(trackData);
 
 
 
